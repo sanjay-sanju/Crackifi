@@ -14,7 +14,7 @@ airodump()
 	echo "Press ctrl+c after 10 seconds"
 	airodump-ng $interface > test.txt 
 	echo "Available Wi-Fis"
-	cat test.txt
+        test.txt
 	read -p "Enter the MAC address of  access point (BSSID): " bssid
 	echo $bssid  
 	read -p "enter the access point channel: " channel
